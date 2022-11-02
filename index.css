@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    background-color: rgb(59, 59, 79);
+    font-family: "Josefin Slab";
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(83, 81, 74);
+    position: sticky;
+    top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navLink {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 140%;
+}
+
+#homeLink {
+    margin-left: 30%;
+}
+
+#contactLink {
+    margin-right: 30%;
+}
+
+.homePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameHeader {
+    color: white;
+    font-size: 600%;
+}
+
+.profileImg {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.titleHeader {
+    color: white;
+    font-size: 450%;
+    margin-bottom: 0;
+}
+
+.pageDivider {
+    color: white;
+    margin: 10%;
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 450%;
+    text-decoration: underline;
+    margin-bottom: 6%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 55%;
+    margin-bottom: 5%;
+    color: white;
+    background-color: rgb(83, 81, 74);
+    padding: 3%;
+    box-shadow: 10px 10px 5px rgb(46, 46, 46);
+}
+
+.projectTitle {
+    font-size: 200%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.techContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+video {
+    width: 56%;
+}
+
+.projectLink {
+    text-decoration: underline;
+    margin-right: 3%;
+}
+
+.hrDivider {
+    height: 1%;
+}
+
+.aboutPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.aboutMe {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+    font-size: 150%;
+    line-height: 1.5;
+    flex: 3;
+}
+
+#aboutTitle {
+    margin-top: 0;
+}
+
+.sideLine {
+    height: 1%;
+}
+

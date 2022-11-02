@@ -4,9 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Slab" />
+    <link rel="stylesheet" href="index.css">
     <title>Portfolio</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.9.0/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('V_Oy6rKRQhhk30hRo');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
-    <h1>Christian</h1>
+    <header class="navBar">
+        <a class="navLink" id="homeLink" href="">Home</a>
+        <a class="navLink" href="#projectsHeader">Projects</a>
+        <a class="navLink" href="#aboutHeader">About</a>
+        <a class="navLink" id="contactLink" href="">Contact</a>
+    </header>
+
+    <div class="homePage">
+        <h1 class="nameHeader" id="nameHeader">Christian Koch</h1>
+        <img class="profileImg" src="./images/profileImg.JPG" alt="Profile Photo">
+        <h3 class="titleHeader">Developer</h3>
+    </div>
+
+    <div class="pageDivider" id="projectsHeader">
+        <hr class="hrDivider" size="8" width="70%" color="white">  
+    </div>
+
+    <div class="projectsPage">
+        <h1 class="pageHeader">Projects</h1>
+        <div class="project">
+            <h3 class="projectTitle">Movie Night</h3>
+            <p class="projectDescription">
+                If you're as indecisive as me, finding a movie to 
+                watch can take longer than actually watching the movie! That's why I created 
+                movie night. When you land on the home page, you start by setting a couple  of 
+                filters. Movie Night will then display a random movie for you that meets 
+                all of your filters! If you are interested in the movie but want to save it for 
+                a later time, you'll be able to add it to a watchlist
+            </p>
+            <video controls src=""></video>
+            <div class="techContainer">
+                <p class="techList">Node.js</p>
+                <p class="techList">HTML</p>
+                <p class="techList">CSS</p>
+                <p class="techList">SQL</p>
+                <p class="techList">Sequelize</p>
+                <p class="techList">Express</p>
+                <p class="techList">Cors</p>
+            </div>
+            <div>
+                <a class="projectLink" href="https://github.com/christiank1030/movieNight.git">GitHub Repository</a>
+                <a class="projectLink" href="">Live Site</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pageDivider" id="aboutHeader">
+        <hr class="hrDivider" size="8" width="70%" color="white">  
+    </div>
+
+    <div class="aboutPage">
+        <h3 class="pageHeader" id="aboutTitle">About</h3>
+        <div class="aboutContainer">
+            <hr class="sideLine" size="8" width="20%" color="white">
+            <p class="aboutMe">
+                Thanks for coming to my portfolio! My name is Christian Koch, I'm 22 years old and I am a 
+                full-stack web developer. Like many people, I explored several career opportunities after 
+                high school but I struggled to find something I was passionate about...until I started 
+                coding.
+                <br>
+                <br>
+                Good problem solver and cabale of working independently or as part of a team. When I'm 
+                not coding I enjoy drawing and digital art, reading, and outdoor activities. But the bulk
+                of my time away from the computer is spent with my two insanely hyper dogs!
+            </p>
+            <hr class="sideLine" size="8" width="20%" color="white">
+        </div>
+    </div>
+
+    <div class="pageDivider" id="aboutHeader">
+        <hr class="hrDivider" size="8" width="70%" color="white">  
+    </div>
+
+    <div class="contactPage">
+        <h3 class="pageHeader">Contact</h3>
+        <div class="contactCard">
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
+                <label>Name</label>
+                <input type="text" name="user_name">
+                <label>Email</label>
+                <input type="text" name="user_email">
+                <label>Message</label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
