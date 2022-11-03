@@ -136,3 +136,38 @@ video {
     height: 1%;
 }
 
+.contactCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputLabels {
+    color: white;
+    font-size: 180%;
+}
+
+.inputs {
+    font-family: "Josefin Slab";
+    font-size: 120%;
+    padding: 5%;
+    padding-right: 22%;
+}
+
+.messageInput {
+    font-family: "Josefin Slab";
+    font-size: 102%;
+    padding: 5%;
+    padding-right: 0;
+}
+
+
+.sendButton {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    font-size: 150%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding-left: 38.5%;
+    padding-right: 38.5%;
+}

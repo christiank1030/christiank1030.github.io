@@ -14,6 +14,9 @@
         })();
     </script>
     <script type="text/javascript">
+        const nameLabel = document.getElementById("nameLabel")
+        const emailLabel = document.getElementById("emailLabel")
+        const messageInput = document.querySelector(".messageInput")
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
@@ -33,7 +36,7 @@
         <a class="navLink" id="homeLink" href="">Home</a>
         <a class="navLink" href="#projectsHeader">Projects</a>
         <a class="navLink" href="#aboutHeader">About</a>
-        <a class="navLink" id="contactLink" href="">Contact</a>
+        <a class="navLink" id="contactLink" href="#contactHeader">Contact</a>
     </header>
 
     <div class="homePage">
@@ -98,7 +101,7 @@
         </div>
     </div>
 
-    <div class="pageDivider" id="aboutHeader">
+    <div class="pageDivider" id="contactHeader">
         <hr class="hrDivider" size="8" width="70%" color="white">  
     </div>
 
@@ -107,13 +110,33 @@
         <div class="contactCard">
             <form id="contact-form">
                 <input type="hidden" name="contact_number">
-                <label>Name</label>
-                <input type="text" name="user_name">
-                <label>Email</label>
-                <input type="text" name="user_email">
-                <label>Message</label>
-                <textarea name="message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send">
+
+                <label class="inputLabels" id="nameLabel">Name -</label>
+                <br>
+                <br>
+                <input class="inputs" type="text" name="user_name" placeholder="First and last name">
+
+                <br>
+                <br>
+                <br>
+
+                <label class="inputLabels" id="emailLabel">Email -</label>
+                <br>
+                <br>
+                <input class="inputs" type="text" name="user_email" placeholder="Your email">
+
+                <br>
+                <br>
+                <br>
+
+                <label class="inputLabels" id="messageLabel">Message -</label>
+                <br>
+                <br>
+                <textarea class="messageInput" name="message" cols="30" rows="6" placeholder="I look forward to hearing from you!"></textarea>
+
+                <br>
+
+                <input class="sendButton" type="submit" value="Send">
             </form>
         </div>
     </div>
