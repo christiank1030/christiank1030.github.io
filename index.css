@@ -132,6 +132,24 @@ video {
     margin-top: 0;
 }
 
+.skillHeader {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 200%;
+}
+
+.skillList {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.listElement {
+    color: white;
+    font-size: 150%;
+}
+
 .sideLine {
     height: 1%;
 }
@@ -240,4 +258,13 @@ video {
         padding-left: 42%;
         padding-right: 42%;
     }
+
+    .skillHeader {
+        font-size: 100%;
+    }
+
+    .listElement {
+        font-size: 75%;
+    }
+    
 }
