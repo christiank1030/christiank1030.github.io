@@ -171,3 +171,73 @@ video {
     padding-left: 38.5%;
     padding-right: 38.5%;
 }
+
+@media (max-width: 750px) {
+    .nameHeader {
+        font-size: 300%;
+    }
+
+    .navBar {
+        font-size: 70%;
+    }
+
+    #homeLink {
+        margin-left: 15%;
+    }
+
+    #contactLink {
+        margin-right: 15%;
+    }
+
+    .titleHeader {
+        font-size: 225%;
+    }
+
+    .pageHeader {
+        font-size: 225%;
+    }
+
+    .project {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .projectTitle {
+        font-size: 100%;
+    }
+
+    .projectDescription {
+        font-size: 50%;
+    }
+
+    .techContainer {
+        font-size: 75%;
+    }
+
+    .aboutMe {
+        font-size: 75%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .inputLabels {
+        font-size: 90%;
+    }
+
+    .inputs {
+        font-size: 60%;
+        padding: 2.5%;
+    }
+
+    .messageInput {
+        font-size: 51%;
+    }
+
+    .sendButton {
+        font-size: 75%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        padding-left: 42%;
+        padding-right: 42%;
+    }
+}
