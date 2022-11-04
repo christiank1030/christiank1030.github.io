@@ -213,9 +213,21 @@ video {
     color: white;
     font-size: 150%;
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     padding-left: 38.5%;
     padding-right: 38.5%;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactLinks {
+    font-size: 180%;
+    padding: 3%;
+    text-decoration: underline;
 }
 
 @media (max-width: 750px) {
@@ -306,6 +318,10 @@ video {
 
     .listElement {
         font-size: 75%;
+    }
+
+    .contactLinks {
+        font-size: 90%;
     }
     
 }
