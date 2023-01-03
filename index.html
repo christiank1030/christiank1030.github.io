@@ -42,7 +42,7 @@
     <div class="homePage">
         <h1 class="nameHeader" id="nameHeader">Christian Koch</h1>
         <img class="profileImg" src="./images/profileImg.JPG" alt="Profile Photo">
-        <h3 class="titleHeader">Developer</h3>
+        <h3 class="titleHeader">Cyber Security Specialist</h3>
     </div>
 
     <div class="pageDivider" id="projectsHeader">
@@ -51,29 +51,49 @@
 
     <div class="projectsPage">
         <h1 class="pageHeader">Projects</h1>
-        <div class="project">
-            <h3 class="projectTitle">Movie Night</h3>
-            <p class="projectDescription">
-                If you're as indecisive as me, finding a movie to 
-                watch can take longer than actually watching the movie! That's why I created 
-                movie night. When you land on the home page, you start by setting a couple  of 
-                filters. Movie Night will then display a random movie for you that meets 
-                all of your filters! If you are interested in the movie but want to save it for 
-                a later time, you'll be able to add it to a watchlist
-            </p>
-            <video controls src="./images/demoVideo.mp4"></video>
-            <div class="techContainer">
-                <p class="techList">Node.js</p>
-                <p class="techList">HTML</p>
-                <p class="techList">CSS</p>
-                <p class="techList">SQL</p>
-                <p class="techList">Sequelize</p>
-                <p class="techList">Express</p>
-                <p class="techList">Cors</p>
+        <div class="projectSection">
+            <div class="project" id="movieNight">
+                <h3 class="projectTitle">Movie Night</h3>
+                <p class="projectDescription">
+                    If you're as indecisive as me, finding a movie to 
+                    watch can take longer than actually watching the movie! That's why I created 
+                    movie night. When you land on the home page, you start by setting a couple  of 
+                    filters. Movie Night will then display a random movie for you that meets 
+                    all of your filters! If you are interested in the movie but want to save it for 
+                    a later time, you'll be able to add it to a watchlist
+                </p>
+                <video controls src="./images/demoVideo.mp4"></video>
+                <div class="techContainer">
+                    <p class="techList">Node.js</p>
+                    <p class="techList">HTML</p>
+                    <p class="techList">CSS</p>
+                    <p class="techList">SQL</p>
+                    <p class="techList">Sequelize</p>
+                    <p class="techList">Express</p>
+                    <p class="techList">Cors</p>
+                </div>
+                <div>
+                    <a class="projectLink" href="https://github.com/christiank1030/movieNight.git" target="_blank">GitHub Repository</a>
+                    <a class="projectLink" href="">Live Site</a>
+                </div>
             </div>
-            <div>
-                <a class="projectLink" href="https://github.com/christiank1030/movieNight.git" target="_blank">GitHub Repository</a>
-                <a class="projectLink" href="">Live Site</a>
+            <div class="project" id="keylogger">
+                <h3 class="projectTitle">Keylogger</h3>
+                <p class="projectDescription">
+                    With this python script you will be able to record and save the keystrokes of whatever machine you deploy it on.
+                    The user has the option of saving the keystroke logs as a txt file in the directory that the script was run from, or recieving them via email. The logs 
+                    will also contain the date and time recorded, and there is a chunk of code that will allow you to determine how often 
+                    the keystroke reports are sent.
+                </p>
+                <video controls src="./images/keyloggerDemo.mp4"></video>
+                <div class="techContainer" id="keyloggerTech">
+                    <p class="techList" id="keyloggerTechList">Python</p>
+                    <p class="techList" id="keyloggerTechList">MIME</p>
+                    <p class="techList" id="keyloggerTechList">smtplib</p>
+                </div>
+                <div>
+                    <a class="projectLink" href="https://github.com/christiank1030/pythonKeylogger.git" target="_blank">GitHub Repository</a>
+                </div>
             </div>
         </div>
     </div>
@@ -87,13 +107,13 @@
         <div class="aboutContainer">
             <hr class="sideLine" size="8" width="20%" color="white">
             <p class="aboutMe">
-                Thanks for coming to my portfolio! My name is Christian Koch, I'm 22 years old and I am a 
-                full-stack web developer. Like many people, I explored several career opportunities after 
-                high school but I struggled to find something I was passionate about...until I started 
-                coding.
+                Thanks for coming to my portfolio! My name is Christian Koch, I am 22 years old and looking 
+                to break into the cybersecurity world. After graduating a coding bootcamp, studying for 
+                several certifications, and completing a few projects, I look forward to bringing my skills 
+                to a company (possibly yours?) and expanding my knowledge in this exciting field!
                 <br>
                 <br>
-                Good problem solver and cabale of working independently or as part of a team. When I'm 
+                Good problem solver and capable of working independently or as part of a team. When I'm 
                 not coding I enjoy drawing and digital art, reading, and outdoor activities. But the bulk
                 of my time away from the computer is spent with my two insanely hyper dogs!
             </p>
@@ -103,10 +123,19 @@
         <h4 class="skillHeader">Skills:</h4>
         <div class="skillSection">
             <ul class="skillList">
-                <li class="listElement">Node.js</li>
+                <li class="listElement">Python</li>
+                <li class="listElement">Shell Scripting</li>
+                <li class="listElement">Splunk</li>
+                <li class="listElement">Wireshark</li>
+                <li class="listElement">Javascript</li>
+            </ul>
+        </div>
+        <div class="skillSection">
+            <ul class="skillList">
                 <li class="listElement">HTML</li>
                 <li class="listElement">CSS</li>
                 <li class="listElement">SQL</li>
+                <li class="listElement">Axios</li>
             </ul>
         </div>
     </div>
