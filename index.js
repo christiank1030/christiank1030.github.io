@@ -6,6 +6,8 @@ const keyloggerColl = document.getElementById('keyloggerColl')
 
 const movieNightColl = document.getElementById('movieNightColl')
 
+const rat = document.getElementById('rat')
+const ratColl = document.getElementById('ratColl')
 
 
 const scrollpos = window.scrollY;
@@ -17,6 +19,9 @@ const projectAnimation = () => {
 
         keylogger.classList.remove('project')
         keylogger.classList.add('project2')
+
+        rat.classList.remove('project')
+        rat.classList.add('project2')
 }
 
 const movieNightCollapsible = () => {
@@ -69,7 +74,27 @@ const keyloggerCollapsible = () => {
         }
 }
 
+const ratCollapsibe = () => {
+        if(ratColl.innerHTML === '') {
+                ratColl.innerHTML = `<p class="projectDescription">
+                This remote access trojan, or RAT, allows the user to remotely connect and control the command line of their 
+                target machine. Able to run commands on the target from your terminal, as well as see the command output. 
+            </p>
+            <video controls src="./images/ratDemo.mp4"></video>
+            <div class="techContainer" id="keyloggerTech">
+                <p class="techList" id="keyloggerTechList">Python</p>
+                <p class="techList" id="keyloggerTechList">Socket</p>
+            </div>
+            <div>
+                <a class="projectLink" href="https://github.com/christiank1030/rat" target="_blank">GitHub Repository</a>
+            </div>`
+        } else {
+                ratColl.innerHTML = ''
+        }
+}
+
 
 projectLink.addEventListener('click', projectAnimation)
 movieNight.addEventListener('click', movieNightCollapsible)
 keylogger.addEventListener('click', keyloggerCollapsible)
+rat.addEventListener('click', ratCollapsibe)
