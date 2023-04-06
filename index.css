@@ -274,6 +274,13 @@ video {
     padding-right: 1%;
 }
 
+@media (max-width: 1200px) {
+    
+}
+
+
+
+
 @media (max-width: 750px) {
     
     .homePage {
@@ -281,18 +288,25 @@ video {
     }
 
     .nameHeader {
-        margin-top: 10%;
+        margin-top: 0%;
+        margin-bottom: 20%;
         font-size: 300%;
         animation: none;
     }
 
     .profileImg {
         animation: none;
-        width: 20%;
+        width: 30%;
     }
 
     .navBar {
         font-size: 70%;
+    }
+
+    .navLink {
+        padding-top: 4%;
+        padding-bottom: 4%;
+        font-size: 160%;
     }
 
     #homeLink {
@@ -305,6 +319,7 @@ video {
 
     .titleHeader {
         font-size: 225%;
+        margin-top: 20%;
         animation: none;
     }
 
@@ -341,6 +356,7 @@ video {
         font-size: 75%;
         margin-left: 5%;
         margin-right: 5%;
+        text-align: center;
     }
 
     .inputLabels {
@@ -375,7 +391,10 @@ video {
     .contactLinks {
         font-size: 65%;
     }
-    
+
+    .pageDivider {
+        margin: 20%;
+    }
 }
 
 .dropdownTitles {
@@ -385,4 +404,14 @@ video {
 
 .dropdownArrows {
     width: 5%;
+}
+
+@media (max-width: 415px) {
+    .nameHeader {
+        font-size: 225%;
+    }
+    
+    .titleHeader {
+        font-size: 150%;
+    }
 }
